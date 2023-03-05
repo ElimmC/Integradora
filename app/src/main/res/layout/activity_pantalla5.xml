@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="e.fimo2.integradora.pantalla5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/NomF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/EdF"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/EdF"
+                    android:layout_marginTop="20dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/EdF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/NomF"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="17dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/SexF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/EdF"
+                    android:layout_alignStart="@+id/EdF"
+                    android:layout_below="@+id/EdF"
+                    android:layout_marginTop="17dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/TpF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/SexF"
+                    android:layout_alignStart="@+id/SexF"
+                    android:layout_below="@+id/SexF"
+                    android:layout_marginTop="20dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/IMCF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/TpF"
+                    android:layout_alignStart="@+id/TpF"
+                    android:layout_below="@+id/TpF"
+                    android:layout_marginTop="15dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/t9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/IMCF"
+                    android:layout_alignStart="@+id/IMCF"
+                    android:layout_below="@+id/IMCF"
+                    android:layout_marginTop="18dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/NCalF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/t9"
+                    android:layout_alignStart="@+id/t9"
+                    android:layout_below="@+id/t9"
+                    android:layout_marginTop="16dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/RecF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/NCalF"
+                    android:layout_alignStart="@+id/NCalF"
+                    android:layout_below="@+id/NCalF"
+                    android:layout_marginTop="16dp"
+                    android:text="TextView" />
+
+                <Button
+                    android:id="@+id/IniF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RecF"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="59dp"
+                    android:onClick="iniF"
+                    android:text="Regresar" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

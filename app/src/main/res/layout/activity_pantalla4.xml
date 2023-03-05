@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="e.fimo2.integradora.pantalla4">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:text="Arma tu Dieta" />
+
+        <CheckBox
+            android:id="@+id/grni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="16dp"
+            android:onClick="on"
+            android:text="Granos" />
+
+        <Spinner
+            android:id="@+id/tip1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/grni"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/veg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tip1"
+            android:layout_marginTop="11dp"
+            android:onClick="onv"
+            android:text="Vegetales" />
+
+        <Spinner
+            android:id="@+id/ve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/veg"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/oa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ve"
+            android:layout_marginTop="13dp"
+            android:onClick="ono"
+            android:text="Origen Animal" />
+
+        <Spinner
+            android:id="@+id/oan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/oa"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/ld"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/oan"
+            android:layout_marginTop="13dp"
+            android:onClick="LyD"
+            android:text="Leche y Derivados" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ld"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/leg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinner3"
+            android:layout_marginTop="12dp"
+            android:onClick="leg"
+            android:text="Leguminosas" />
+
+        <Spinner
+            android:id="@+id/le"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/leg"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView6"
+            android:layout_alignRight="@+id/textView6"
+            android:layout_below="@+id/le"
+            android:layout_marginTop="12dp"
+            android:onClick="eniv"
+            android:text="Calcular" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
